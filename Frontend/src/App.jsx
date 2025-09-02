@@ -12,6 +12,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import ScrollToTop from "./components/Home/ScrollToTop.jsx";
+import ChatBot from "./components/Chat/ChatBot.jsx";
+import QuickHelp from "./components/Chat/QuickHelp.jsx";
 
 function App() {
   const location = useLocation();
@@ -42,6 +44,8 @@ function App() {
                 <ScrollToTop />
 
                 <Outlet />
+                <ChatBot />
+                <QuickHelp />
                 <Footer />
                 <ToastContainer
                   position="top-right"

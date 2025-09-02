@@ -20,6 +20,15 @@ function AdminDashboard() {
       </h1>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
+      {/* AI Chat Analytics */}
+      <Link
+        to="/admin/chat-analytics"
+        className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition"
+      >
+        <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">🤖 AI Chat Analytics</h2>
+        <p className="text-gray-600 dark:text-gray-300 text-sm">View chat usage statistics and common questions</p>
+      </Link>
+      
       <Link
           to="/admin/upload-notes"
           className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition"

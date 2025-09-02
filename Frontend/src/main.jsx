@@ -29,6 +29,7 @@ import UserRole from "./components/Admin/UserRole.jsx";
 import VerifyOTP from "./components/VerifyOTP.jsx";
 import ForgotPassword from "./components/Authentication/ForgotPassword.jsx";
 import ResetPassword from "./components/Authentication/ResetPassword.jsx";
+import ChatAnalytics from "./components/Admin/ChatAnalytics.jsx";
 
 
 const router = createBrowserRouter(
@@ -68,6 +69,7 @@ const router = createBrowserRouter(
       <Route path="/admin/add-syllabus" element={<AdminRoute><AddSyllabus /></AdminRoute>} />
       <Route path="/admin/syllabus-table" element={<AdminRoute><SyllabusTable /></AdminRoute>} />
       <Route path="/admin/users"  element={<AdminRoute><UserRole /></AdminRoute>} />
+      <Route path="/admin/chat-analytics" element={<AdminRoute><ChatAnalytics /></AdminRoute>} />
 
 
 
